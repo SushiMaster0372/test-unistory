@@ -42,22 +42,50 @@ $main-color: #e75626;
       width: 80%;
       position: relative;
 
-      .earth-img-main {
+      .text-over-planet {
+        position: absolute;
+        top: -58px;
+        left: 663px;
+      }
+
+      .planet-header-wrapper {
+        position: absolute;
+        top: -153px;
+        left: 751px;
+      }
+
+      .planet-img-main {
         position: absolute;
         top: -160px;
         left: 550px;
         z-index: -1;
       }
 
+      .title {
+        margin-bottom: 45px;
+      }
+
       h1 {
+        display: inline;
         font-style: normal;
         font-weight: 700;
         font-size: 120px;
         line-height: 100%;
         color: #ffffff;
         white-space: pre-wrap;
-        margin-bottom: 45px;
       }
+
+      @supports (
+        (text-stroke: 0.5px white) or (-webkit-text-stroke: 0.5px white)
+      ) {
+        h1.h1-with-border {
+          color: transparent;
+          -webkit-text-stroke: 0.5px white;
+          -webkit-text-stroke-width: 0.5px;
+          text-shadow: none;
+        }
+      }
+
       .top-description {
         font-family: "Avenir Next Cyr";
         font-style: normal;
@@ -140,7 +168,7 @@ $main-color: #e75626;
       }
 
       p {
-        font-family: "Avenir Next Cyr", sans-serif;
+        font-family: "Avenir Next Cyr";
         font-style: normal;
         font-weight: 400;
         font-size: 16px;

@@ -3,7 +3,7 @@ import "./MyCircleAnimation.module.scss";
 const MyCircleAnimation = () => {
   return (
     <svg>
-      <circle className="clock" cx="300" cy="300" r="210" />
+      <circle className="clock" cx="300" cy="300" r="245" />
     </svg>
   );
 };

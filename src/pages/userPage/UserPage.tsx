@@ -4,7 +4,7 @@ import { IUser } from "../../types/types";
 import { useParams } from "react-router-dom";
 import "./userPage.scss";
 import MySubtitle from "../../components/UI/MySubtitle/MySubtitle";
-import MyEarthImg from "../../components/UI/MyEarthImg/MyEarthImg";
+import MyPlanetImg from "../../components/UI/MyPlanetImg/MyPlanetImg";
 
 type UserPageParams = {
   id: string;
@@ -31,8 +31,8 @@ const UserPage: FC = () => {
 
   return (
     <div className="user-data">
-      <div className="earth-img-user-page">
-        <MyEarthImg />
+      <div className="planet-img-user-page">
+        <MyPlanetImg />
       </div>
       <h2>Personal Data</h2>
       <div className="block-of-data">

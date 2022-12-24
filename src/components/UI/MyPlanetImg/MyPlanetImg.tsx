@@ -1,10 +1,8 @@
 import React from "react";
-import earth from "../../../assets/earth.png";
+import planet from "../../../assets/planet.png";
 import MyCircleAnimation from "../MyCircleAnimation/MyCircleAnimation";
-import cl from "./MyEarthImg.module.scss";
-// <img src={earth} alt="earth" />
-
-const MyEarthImg = () => {
+import cl from "./MyPlanetImg.module.scss";
+const MyPlanetImg = () => {
   return (
     <div>
       <div className={cl.outer}>
@@ -15,7 +13,7 @@ const MyEarthImg = () => {
         <div className={cl.inner_2}>
           <div className={cl.inner_3}>
             <div className={cl.inner_4}>
-              <img src={earth} alt="earth" />
+              <img src={planet} alt="planet" />
             </div>
           </div>
         </div>
@@ -24,4 +22,4 @@ const MyEarthImg = () => {
   );
 };
 
-export default MyEarthImg;
+export default MyPlanetImg;

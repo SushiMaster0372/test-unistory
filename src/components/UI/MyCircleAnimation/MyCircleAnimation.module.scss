@@ -13,15 +13,15 @@ circle {
   stroke: #e75626;
 
   stroke-width: 2px;
-  stroke-dasharray: 1350;
-  stroke-dashoffset: 1350;
+  stroke-dasharray: 1540;
+  stroke-dashoffset: 1540;
   animation: clock-animation 10s linear infinite;
   transform: rotate(-90deg);
   transform-origin: center;
 }
 @keyframes clock-animation {
   0% {
-    stroke-dashoffset: 1350;
+    stroke-dashoffset: 1540;
   }
   100% {
     stroke-dashoffset: 0;

@@ -1,12 +1,26 @@
 import React from "react";
-import MyEarthImg from "../UI/MyEarthImg/MyEarthImg";
+import MyPlanetImg from "../UI/MyPlanetImg/MyPlanetImg";
+import planetWithText from "../../assets/planetWithText.png";
+import RoadmapStats from "./RoadmapStats";
+import MyPlanetHeader from "../UI/MyPlanetHeader/MyPlanetHeader";
 const TopContent = () => {
   return (
     <div className="top">
       <div className="left-content">
-        <h1>{"Explore your own planet \nin our new metaverse"}</h1>
-        <div className="earth-img-main">
-          <MyEarthImg />
+        <div className="title">
+          <h1>{"Explore your own planet \nin "}</h1>
+          <h1 className="h1-with-border">
+            our new <h1>metaverse</h1>
+          </h1>
+        </div>
+        <div className="text-over-planet">
+          <img src={planetWithText} alt="" />
+        </div>
+        <div className="planet-header-wrapper">
+          <MyPlanetHeader />
+        </div>
+        <div className="planet-img-main">
+          <MyPlanetImg />
         </div>
         <div className="top-description">
           <p>
@@ -18,25 +32,7 @@ const TopContent = () => {
         </div>
       </div>
 
-      <div className="right-content">
-        <h3>Roadmap stats</h3>
-        <div className="stats-item">
-          <span className="stats-item__amount">12345</span>
-          <span className="stats-item__description">Lorem ipsum dolor</span>
-          <hr />
-        </div>
-
-        <div className="stats-item">
-          <span className="stats-item__amount">12345</span>
-          <span className="stats-item__description">Lorem ipsum dolor</span>
-          <hr />
-        </div>
-
-        <div className="stats-item">
-          <span className="stats-item__amount">12345</span>
-          <span className="stats-item__description">Lorem ipsum dolor</span>
-        </div>
-      </div>
+      <RoadmapStats />
     </div>
   );
 };

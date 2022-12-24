@@ -149,10 +149,10 @@ $main-color: #e75626;
     margin-bottom: 200px;
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1.2fr;
+    grid-template-columns: 1fr 1.3fr;
 
     .registration {
-      width: 65%;
+      width: 60%;
 
       .not-active {
         transition: 0.5s;
@@ -189,7 +189,7 @@ $main-color: #e75626;
       }
     }
 
-    .listing {
+    .listing-wrapper {
       h3 {
         font-weight: 700;
         font-size: 36px;
@@ -197,6 +197,12 @@ $main-color: #e75626;
         color: #ffffff;
         margin-bottom: 35px;
       }
+    }
+
+    .listing {
+      width: 100%;
+      max-height: 40rem;
+      overflow-y: scroll;
 
       table {
         height: 200px;
@@ -210,7 +216,7 @@ $main-color: #e75626;
           padding: 16px 8px;
         }
         td {
-          font-family: "Avenir Next Cyr", sans-serif;
+          font-family: "Avenir Next Cyr";
           font-style: normal;
           font-weight: 400;
           font-size: 14px;
@@ -241,4 +247,16 @@ $main-color: #e75626;
       }
     }
   }
+}
+
+.listing::-webkit-scrollbar {
+  width: 2px;
+}
+
+.listing::-webkit-scrollbar-track {
+  background-color: #ffffff;
+}
+
+.listing::-webkit-scrollbar-thumb {
+  background-color: $main-color;
 }

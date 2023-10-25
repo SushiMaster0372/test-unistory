@@ -15,7 +15,7 @@ const UserPage: FC = () => {
   const params = useParams<UserPageParams>();
 
   useEffect(() => {
-    fetchUser();
+    fetchUser(); 
   }, []);
 
   async function fetchUser() {
